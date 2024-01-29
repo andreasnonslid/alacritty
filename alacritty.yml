@@ -1,0 +1,86 @@
+# https://alacritty.org/config-alacritty.html
+
+live_config_reload: true
+
+window:
+  decorations: full
+  opacity: 0.95
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: false
+  decorations_theme_variant: Dark
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: MesloLGLDZ Nerd Font Mono
+    style: Regular
+  bold:
+    family: MesloLGLDZ Nerd Font Mono
+    style: Bold
+  italic:
+    family: MesloLGLDZ Nerd Font Mono
+    style: Italic
+  bold_italic:
+    family: MesloLGLDZ Nerd Font Mono
+    style: Bold Italic
+  size: 14.0
+
+draw_bold_text_with_bright_colors: true
+
+import:
+  # - "C:\\dev\\alacritty-master\\dracula.yml"
+  - "C:\\dev\\alacritty-master\\catppuccin.toml"
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Beam
+    blinking: Always
+    blink_interval: 500
+    blink_timeout: 30
+    unfocused_hollow: true
+    thickness: 0.1
+
+mouse:
+  hide_when_typing: false
+  hints:
+    enabled: true
+    additional_escape_modifiers: Control
+
+shell:
+  program: "C:/Program Files/Git/bin/bash.exe"
+  args:
+    - -i
+    - -l
+# "current_dir=\"$(pwd)\"\necho \"$current_dir\" | clip.exe\nalacritty"
+key_bindings:
+  # - { key: C, mods: Control, action: Copy }
+  # - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: V, mods: Control|Shift, action: Paste }
+  # - { key: Insert, mods: Shift, action: Paste }
+  # - { key: Delete, mods: Shift, action: Copy }
+
+  - { key: Back, mods: Control, chars: "\x17" } # del prev word
+  - { key: Back, mods: Control|Shift, chars: "\x1bd" } # del next word
+  - { key: D, mods: Control, chars: "\x15" } # del next word
+
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+
+  # - { key: F, mods: Control, action: SearchForward }
+  # - { key: B, mods: Control, action: SearchBackward }
+
+  - { key: J, mods: Control|Alt, action: ToggleFullscreen }
+  # - { key: L, mods: Control, action: ClearLogNotice }
+  # - { key: Return, mods: Control|Alt, action: ClearHistory }
+
+  # - { key: Space, mods: Control, action: ToggleViMode }
+
+  - { key: Space, mods: Control, chars: "\0" }
