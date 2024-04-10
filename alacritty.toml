@@ -1,4 +1,4 @@
-import = ['C:\dev\alacritty-master\catppuccin.toml']
+# import = ['C:\dev\alacritty-master\catppuccin.toml']
 live_config_reload = true
 working_directory = "C:\\"
 
