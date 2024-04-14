@@ -45,11 +45,6 @@ key = "Back"
 mods = "Control|Shift"
 
 [[keyboard.bindings]]
-chars = "\u0015"
-key = "D"
-mods = "Control"
-
-[[keyboard.bindings]]
 action = "IncreaseFontSize"
 key = "Equals"
 mods = "Control"
@@ -64,15 +59,15 @@ action = "ResetFontSize"
 key = "Key0"
 mods = "Control"
 
-[[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "J"
-mods = "Control|Alt"
+# [[keyboard.bindings]]
+# action = "ToggleFullscreen"
+# key = "J"
+# mods = "Control|Alt"
 
-[[keyboard.bindings]]
-chars = "\u0000"
-key = "Space"
-mods = "Control"
+# [[keyboard.bindings]]
+# chars = "\u0000"
+# key = "Space"
+# mods = "Control"
 
 [mouse]
 hide_when_typing = false
