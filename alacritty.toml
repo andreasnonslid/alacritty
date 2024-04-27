@@ -9,19 +9,19 @@ draw_bold_text_with_bright_colors = true
 size = 14.0
 
 [font.bold]
-family = "CaskaydiaCove NF"
+family = "Iosevka"
 style = "Bold"
 
 [font.bold_italic]
-family = "CaskaydiaCove NF"
+family = "Iosevka"
 style = "Bold Italic"
 
 [font.italic]
-family = "CaskaydiaCove NF"
+family = "Iosevka"
 style = "Italic"
 
 [font.normal]
-family = "CaskaydiaCove NF"
+family = "Iosevka"
 style = "Regular"
 
 [[keyboard.bindings]]
@@ -80,8 +80,8 @@ multiplier = 3
 save_to_clipboard = true
 
 [shell]
-args = ["-i", "-l"]
-program = "C:/Program Files/Git/bin/bash.exe"
+args = ["/k", "wsl -e bash -c \"cd ~ && exec bash\""]
+program = "cmd.exe"
 
 [window]
 decorations = "full"
