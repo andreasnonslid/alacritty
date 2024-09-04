@@ -79,9 +79,12 @@ multiplier = 3
 [selection]
 save_to_clipboard = true
 
+# [shell]
+# args = ["/k", "wsl -e bash -c \"cd ~ && exec bash\""]
+# program = "cmd.exe"
 [shell]
-args = ["/k", "wsl -e bash -c \"cd ~ && exec bash\""]
-program = "cmd.exe"
+args = ["-i"]
+program = "C:\\Program Files\\Git\\bin\\bash.exe"
 
 [window]
 decorations = "full"
